@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.36.1",
+  "pnpmVersion": "5.15.3",
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0",
+  "ensureConsistentVersions": true,
+  "pnpmOptions": {
+    "pnpmStore": "local",
+    "strictPeerDependencies": false,
+    "preventManualShrinkwrapChanges": true,
+    "useWorkspaces": true
+  },
+  "gitPolicy": {
+    "versionBumpCommitMessage": "Applying package updates. [skip-ci]"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "variants": [],
+  "projects": [
+    {
+      "packageName": "some-package",
+      "projectFolder": "packages/some-package",
+      "cyclicDependencyProjects": [],
+      "skipRushCheck": false,
+      "shouldPublish": true
+    }
+  ]
+}
