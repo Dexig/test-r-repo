@@ -18,6 +18,7 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "esModuleInterop": true,
+        "types": ["node"]
     },
     "include": [
         "src/**/*",
